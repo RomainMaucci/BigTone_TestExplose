@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <title>BigTone E-Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--tailwind CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+  </head>
+
+  <body class="bg-black text-white font-custom overflow-x-hidden">
+    
+    <header class="fixed top-0 text-2xl w-full z-100">
+
+      <div class="grid grid-cols-2 mt-10 xl:mt-20 m-10">
+
+        <div><a href="homepage.html">BigTone</a></div>
+        <div class="text-right"><span id="menu" class="cursor-pointer" onclick="menu()">Menu</span></div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+    <!-- MENU -->
+
+      <section id="menuContent" class="hidden">
+
+        <div class="xl:w-1/3 w-1/2 m-auto relative">
+    
+            <div class="lg:text-big md:text-10xl text-5xl sm:leading-tight leading-loose absolute">
+
+              <div class="z-50 relative"><a class="border-b border-transparent hover:border-white no-underline xl:opacity-0 hover:opacity-100" href="">Shop</a></div>
+              <div class="z-50 relative"><a class="border-b border-transparent hover:border-white no-underline xl:opacity-0 hover:opacity-100" href="">Our story</a></div>
+              <div class="z-50 relative"><a class="border-b border-transparent hover:border-white no-underline xl:opacity-0 hover:opacity-100" href="">Lookbook</a></div>
+
+            </div>
+
+            <div class="lg:text-big md:text-10xl text-5xl leading-tight absolute">
+
+              <div class="z-0 border-b border-transparent relative">Shop</div>
+              <div class="z-0 border-b border-transparent relative">Our story</div>
+              <div class="z-0 border-b border-transparent relative">Lookbook</div>
+
+            </div>
+  
+        </div>
+
+        <div class="flex sm:mt-32 mt-20">
+          <div class="z-30 m-auto">
+            <img class="sm:w-full w-screen" src="images/menu-img.png" alt="">
+          </div>
+        </div> 
+
+        <div class="grid m-10 text-center absolute bottom-0 sm:mb-20 z-100">
+
+          <div class="leading-relaxed">
+         
+              <div class="mr-32">Follow</div>
+              <div class="">BigTone on</div>
+              <div class="mr-22">
+                <a href="" class="border-b border-grayBg hover:border-white pb-1 mr-3">Fb</a>
+                <a href="" class="border-b border-grayBg hover:border-white pb-1">Tw</a>
+                <a href="" class="border-b border-grayBg hover:border-white pb-1 ml-3">Ig</a>
+              </div>
+     
+          </div>
+      </section>
+
+    <!-- CONTENT -->
+
+      <section id="content">
+
+        <div class="flex m-auto sm:mt-32">
+
+          <div class="lg:text-big md:text-10xl text-5xl absolute left-0 ml-10 mt-64 xl:ml-64 xl:mt-320 leading-none">
+
+            <div>Shapes</div>
+            <div>+ Movements</div>
+
+          </div>
+
+          <div class="m-auto">
+            <img src="images/mission-img.png" alt="">
+          </div>
+        </div>
+
+
+        <div class="md:m-auto md:w-600 md:text-5xl ml-10 md:mt-56 mt-24 leading-tight js-show-on-scroll">
+          Earthy tones, knitted patterns and metallic accents are what characterizes this Autumn Winter collection.
+        </div>
+        
+
+        <div class="flex sm:mt-40 ml-10 mr-10 leading-tight mt-20 js-show-on-scroll">
+
+            <p id="ladies" onclick="genderSelect('ladies')" class="w-1/3 text-left text-pink border-b border-pink hover:border-pink xl:text-big lg:text-8xl md:text-6xl sm:text-4xl text-2xl cursor-pointer">Ladies<span class="align-top text-sm">54</span></p>
+          
+            <p id="mens" onclick="genderSelect('mens')" class="w-1/3 text-center text-blue border-b border-transparent hover:border-blue xl:text-big lg:text-8xl md:text-6xl sm:text-4xl text-2xl cursor-pointer">Mens<span class="align-top text-sm">105</span></p>
+          
+            <p id="childs" onclick="genderSelect('childs')" class="w-1/3 text-right text-green border-b border-transparent hover:border-green xl:text-big lg:text-8xl md:text-6xl sm:text-4xl text-2xl cursor-pointer">Childs<span class="align-top text-sm">68</span></p>
+          
+        </div>
+
+
+        <!-- Slider main container -->
+        <div class="swiper-container sm:mt-40 mt-20 js-show-on-scroll">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper items-center">
+              <!-- Slides -->
+
+              <div class="swiper-slide w-3/4 lg:w-1/5">
+                <img class="w-full" src="images/Item - Hovered.png" alt="">
+
+                <div class="absolute top-0 ml-10 text-4xl xl:opacity-0 hover:opacity-100 w-full h-full">
+                    <span class="text-sm">48€</span> <br> Soft <br> Dress
+                </div>
+               
+              </div>
+
+              <div class="swiper-slide w-3/4 lg:w-1/5">
+                <img class="w-full" src="images/img-02.png" alt="">
+                <div class="absolute top-0 ml-10 text-4xl xl:opacity-0 hover:opacity-100 w-full h-full">
+                    <span class="text-sm">24€</span> <br> T-Shirt <br> Unicolor
+                </div>
+              </div>
+
+              <div class="swiper-slide w-3/4 lg:w-1/5">
+                <img class="w-full" src="images/img-03.png" alt="">
+                <div class="absolute top-0 ml-10 text-4xl xl:opacity-0 hover:opacity-100 w-full h-full">
+                  <span class="text-sm">48€</span> <br> Soft <br> Dress
+                </div>
+              </div>
+
+              <div class="swiper-slide w-3/4 lg:w-1/5">
+                <img class="w-full" src="images/img-04.png" alt="">
+                <div class="absolute top-0 ml-10 text-4xl xl:opacity-0 hover:opacity-100 w-full h-full">
+                  <span class="text-sm">48€</span> <br> Soft <br> Dress
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="xl:w-3/4 mx-auto sm:mt-40 mt-16 relative">
+
+          <div class="lg:text-big md:text-10xl text-5xl absolute left-0 ml-10 mt-22 md:mt-32 xl:ml-64 xl:mt-320 leading-none js-show-on-scroll">
+
+            <div>Our</div>
+            <div>Shapes</div>
+
+          </div>
+
+          <img class="w-full" src="images/video-img.png" alt="">
+          <div class="absolute top-0 w-full h-full flex">
+            <svg class="mt-auto ml-auto mb-auto" xmlns="http://www.w3.org/2000/svg" width="30" height="34" viewBox="0 0 30 34"><defs><style>.a{fill:none;}.b,.c{stroke:none;}.c{fill:#fff;}</style></defs><g class="a" transform="translate(30) rotate(90)"><path class="b" d="M17,0,34,30H0Z"/><path class="c" d="M 17 8.113386154174805 L 6.864252090454102 26 L 27.1357479095459 26 L 17 8.113386154174805 M 17 0 L 34 30 L 0 30 L 17 0 Z"/></g></svg>
+            <span class="ml-2 pt-1 m-auto">Play</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+
+      <div class="sm:grid sm:grid-cols-2 lg:my-56 md:my-24 my-10 m-10 text-center">
+
+        <div class="leading-relaxed">
+       
+            <div class="sm:mr-32">Follow</div>
+            <div class="">BigTone on</div>
+            <div class="sm:mr-22">
+              <a href="" class="border-b border-grayBg hover:border-white pb-1 mr-3">Fb</a>
+              <a href="" class="border-b border-grayBg hover:border-white pb-1">Tw</a>
+              <a href="" class="border-b border-grayBg hover:border-white pb-1 ml-3">Ig</a>
+            </div>
+   
+        </div>
+
+        <div class="sm:mt-16 mt-10 sm:mr-16">
+
+          <span class="mr-6">Shop</span>
+          <span>Our story</span>
+          <span class="ml-6">Lookbook</span>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <!-- COOKIE -->
+    <div id="accept" class="w-full lg:w-1/4 bg-DarkGray fixed bottom-0 right-0 lg:m-10 p-8 text-xs text-grayFont z-100">
+      To provide the best possible experience, our site uses both necessary and optionnal 
+      cookies to store information. By continuing to browse you are accepting our Cookie Policy.
+
+      <div class="text-white w-9 border-b border-grayBg hover:border-white mt-4 pb-1 cursor-pointer leading-tight" onclick="acceptCookie()">Accept</div>
+      
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+
+      var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        freeMode: true,
+        loop: true,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        grabCursor: true,
+
+        breakpoints: {
+          480: {
+            slidesPerView: 2.5,
+            spaceBetween: 64,
+          },
+          800: {
+            slidesPerView: 3.5,
+            spaceBetween: 64,
+          }
+        }
+      })
+
+      function genderSelect(gender){
+        if(gender == 'ladies'){
+          document.getElementById('ladies').style.borderColor = '#FFCDC1';
+          document.getElementById('mens').style.borderColor = 'transparent';
+          document.getElementById('childs').style.borderColor = 'transparent';
+        }else if(gender == 'mens'){
+          document.getElementById('ladies').style.borderColor = 'transparent';
+          document.getElementById('mens').style.borderColor = '#CBE9FF';
+          document.getElementById('childs').style.borderColor = 'transparent';
+        }
+        else if(gender == 'childs'){
+          document.getElementById('ladies').style.borderColor = 'transparent';
+          document.getElementById('mens').style.borderColor = 'transparent';
+          document.getElementById('childs').style.borderColor = '#E0FCB5';
+        }
+      }
+
+      function acceptCookie(){
+        document.getElementById('accept').style.visibility ="hidden";
+      }
+
+      function menu(){
+        let display = document.getElementById('content').style.display;
+        if(display == "none"){
+          document.getElementById('menu').innerText="Menu";
+          document.getElementById('content').style.display="inherit";
+          document.getElementById('menuContent').style.display="none";
+          document.getElementById('footer').style.display="inherit";
+        }else{
+          document.getElementById('menu').innerText="Close";
+          document.getElementById('content').style.display="none";
+          document.getElementById('menuContent').style.display="inherit";
+          document.getElementById('footer').style.display="none";
+        }
+      }
+
+      const callback = function (entries) {
+        entries.forEach((entry) => {
+          console.log(entry);
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeIn");
+          } else {
+            entry.target.classList.remove("animate-fadeIn");
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(callback);
+
+      const targets = document.querySelectorAll(".js-show-on-scroll");
+      targets.forEach(function (target) {
+        target.classList.add("opacity-0");
+        observer.observe(target);
+      });
+    </script>
+  </body>
+
+</html>
